@@ -1,7 +1,9 @@
 package com.example.net_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +15,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private ListView lvScavengerHuntItems;
     private ArrayAdapter<String> itemsAdapter;
+    private Button btnGoToProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +25,16 @@ public class HomeActivity extends AppCompatActivity {
         lvScavengerHuntItems = findViewById(R.id.lvScavengerHuntItems);
         itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
         lvScavengerHuntItems.setAdapter(itemsAdapter);
+        btnGoToProfile = findViewById(R.id.btnGoToProfile);
 
         fetchScavengerHuntItems();
+
+        // Set an OnClickListener on the button
+        btnGoToProfile.setOnClickListener(view -> {
+            // Intent to navigate to ProfileActivity
+            Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void fetchScavengerHuntItems() {

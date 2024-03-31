@@ -1,12 +1,25 @@
 package com.example.net_app;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity {
+
     static {
         System.loadLibrary("net_app");
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // Assuming you want to immediately proceed to the sign-up process
+        Intent intent = new Intent(this, StartSignupActivity.class);
+        startActivity(intent);
+        // Optionally, add finish() here if you don't want users to return to this MainActivity with the back button
+        finish();
     }
 
     @Override
