@@ -1,53 +1,16 @@
-public class Leaderboard {
+package com.example.net_app;
 
-    import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
+import android.annotation.SuppressLint;
+import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
-public class LeaderboardActivity extends AppCompatActivity {
+public class Leaderboard extends AppCompatActivity {
 
-    private ListView leaderboardListView;
-    private ArrayAdapter<String> adapter;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        leaderboardListView = findViewById(R.id.leaderboardListView);
-
-        List<Student> students = new ArrayList<>();
-        students.add(new Student("John", 95));
-        students.add(new Student("Emma", 88));
-        students.add(new Student("Liam", 92));
-        students.add(new Student("Olivia", 90));
-        students.add(new Student("James", 85));
-
-        // Sort students by score
-        Collections.sort(students, new Comparator<Student>() {
-            @Override
-            public int compare(Student s1, Student s2) {
-                return s2.getScore() - s1.getScore();
-            }
-        });
-
-        List<String> leaderboardEntries = new ArrayList<>();
-        for (int i = 0; i < students.size(); i++) {
-            leaderboardEntries.add((i + 1) + ". " + students.get(i).getName() + " - " + students.get(i).getScore());
-        }
-
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, leaderboardEntries);
-        leaderboardListView.setAdapter(adapter);
-    }
-
-    private class Student {
+    public static class Student {
         private String name;
         private int score;
 
@@ -64,8 +27,34 @@ public class LeaderboardActivity extends AppCompatActivity {
             return score;
         }
     }
-}
 
+    private RecyclerView leaderboardRecyclerView;
+    private ArrayList<Student> studentList;
+//    private StudentAdapter studentAdapter;
 
-    
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+
+        leaderboardRecyclerView = findViewById(R.id.leaderboardRecyclerView);
+        leaderboardRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        // Initialize your student data (e.g., from a database or hardcoded list)
+        studentList = new ArrayList<>();
+        studentList.add(new Student("John", 90));
+        studentList.add(new Student("Alice", 85));
+        studentList.add(new Student("Bob", 80));
+        // Add more students as needed
+
+        // Initialize the adapter
+// Initialize the adapter
+//        Object studentAdapter = new StudentAdapter(studentList);
+
+// Set the adapter to the RecyclerView
+        Object studentAdapter = studentList;
+        leaderboardRecyclerView.setAdapter((RecyclerView.Adapter) studentAdapter);
+
+    }
 }
