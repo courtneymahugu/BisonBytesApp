@@ -1,9 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application</string>
-    <resources>
-        <string name="label_name">What is your name?</string>
-        <string name="hint_name">Enter your name</string>
-        <string name="sign_up">Sign Up</string>
-    </resources>
-
+    <string name="label_name">What is your name?</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
