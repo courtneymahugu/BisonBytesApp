@@ -44,8 +44,8 @@ android {
 }
 
 dependencies {
-    implementation("com.google.firebase:firebase-auth:21.0.1") // Replace version with the latest version
-    implementation("com.google.firebase:firebase-database:21.0.1")
+    implementation ("com.google.firebase:firebase-auth")
+    implementation ("com.google.firebase:firebase-database")
     implementation("com.google.zxing:core:3.3.3")
     implementation("com.journeyapps:zxing-android-embedded:4.2.0")
     implementation(libs.appcompat)

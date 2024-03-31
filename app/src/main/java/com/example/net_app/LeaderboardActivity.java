@@ -21,8 +21,6 @@ public class LeaderboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.leaderboard_page);
 
-        leaderboardListView = findViewById(R.id.leaderboardListView);
-
         List<Student> students = new ArrayList<>();
         students.add(new Student("John", 95));
         students.add(new Student("Emma", 88));
