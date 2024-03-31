@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
 
     <!-- TextView for the title -->
     <TextView
@@ -11,3 +15,259 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
+
+    <!-- Container for leaderboard entries -->
+    <RelativeLayout
+        android:id="@+id/leaderboardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:paddingRight="16dp">
+
+        <!-- Leader 1 -->
+        <TextView
+            android:id="@+id/leader1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#1"
+            android:textSize="24sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/leader1EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/leader1TextView"
+            android:layout_toLeftOf="@id/leader1TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 1" />
+
+        <!-- Leader 2 -->
+        <TextView
+            android:id="@+id/leader2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#2"
+            android:textSize="24sp"
+            android:layout_below="@id/leader1EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <!-- Leader 3 -->
+
+        <EditText
+            android:id="@+id/leader2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader1EditText"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="-9dp"
+            android:layout_marginRight="-9dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/leader2TextView"
+            android:layout_toLeftOf="@id/leader2TextView"
+            android:hint="Leader 2" />
+
+        <TextView
+            android:id="@+id/leader3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#3"
+            android:textSize="24sp"
+            android:layout_below="@id/leader2EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader3EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader2EditText"
+            android:layout_toStartOf="@id/leader3TextView"
+            android:layout_toLeftOf="@id/leader3TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 3" />
+
+        <!-- Leader 4 -->
+        <TextView
+            android:id="@+id/leader4TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#4"
+            android:textSize="24sp"
+            android:layout_below="@id/leader3EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader4EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader3EditText"
+            android:layout_toStartOf="@id/leader4TextView"
+            android:layout_toLeftOf="@id/leader4TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 4" />
+
+        <!-- Leader 5 -->
+        <TextView
+            android:id="@+id/leader5TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#5"
+            android:textSize="24sp"
+            android:layout_below="@id/leader4EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader5EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader4EditText"
+            android:layout_toStartOf="@id/leader5TextView"
+            android:layout_toLeftOf="@id/leader5TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 5" />
+
+        <!-- Leader 6 -->
+        <TextView
+            android:id="@+id/leader6TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#6"
+            android:textSize="24sp"
+            android:layout_below="@id/leader5EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader6EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader5EditText"
+            android:layout_toStartOf="@id/leader6TextView"
+            android:layout_toLeftOf="@id/leader6TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 6" />
+
+        <!-- Leader 7 -->
+        <TextView
+            android:id="@+id/leader7TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#7"
+            android:textSize="24sp"
+            android:layout_below="@id/leader6EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader7EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader6EditText"
+            android:layout_toStartOf="@id/leader7TextView"
+            android:layout_toLeftOf="@id/leader7TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 7" />
+
+        <!-- Leader 8 -->
+        <TextView
+            android:id="@+id/leader8TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#8"
+            android:textSize="24sp"
+            android:layout_below="@id/leader7EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader8EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader7EditText"
+            android:layout_toStartOf="@id/leader8TextView"
+            android:layout_toLeftOf="@id/leader8TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 8" />
+
+        <!-- Leader 9 -->
+        <TextView
+            android:id="@+id/leader9TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#9"
+            android:textSize="24sp"
+            android:layout_below="@id/leader8EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader9EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader8EditText"
+            android:layout_toStartOf="@id/leader9TextView"
+            android:layout_toLeftOf="@id/leader9TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 9" />
+
+        <!-- Leader 10 -->
+        <TextView
+            android:id="@+id/leader10TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#10"
+            android:textSize="24sp"
+            android:layout_below="@id/leader9EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader10EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader9EditText"
+            android:layout_toStartOf="@id/leader10TextView"
+            android:layout_toLeftOf="@id/leader10TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 10" />
+
+        <!-- Leader 11 -->
+        <TextView
+            android:id="@+id/leader11TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#11"
+            android:textSize="24sp"
+            android:layout_below="@id/leader10EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader11EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader10EditText"
+            android:layout_toStartOf="@id/leader11TextView"
+            android:layout_toLeftOf="@id/leader11TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 11" />
+
+        <!-- Leader 12 -->
+        <TextView
+            android:id="@+id/leader12TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#12"
+            android:textSize="24sp"
+            android:layout_below="@id/leader11EditText"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:id="@+id/leader12EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leader11EditText"
+            android:layout_toStartOf="@id/leader12TextView"
+            android:layout_toLeftOf="@id/leader12TextView"
+            android:layout_marginBottom="8dp"
+            android:hint="Leader 12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
