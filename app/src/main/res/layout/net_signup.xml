@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="#FFE6FF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,119 +13,196 @@
 
         <!-- Name -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is your name?" />
+            android:text="What's your name?"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
+
         <EditText
             android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp" />
 
         <!-- Classification -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is your classification?" />
+            android:text="Choose your classification:"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <Spinner
             android:id="@+id/spinnerClassification"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="#FFF0F4"
+            android:textColor="#880E4F"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
 
         <!-- Major -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is your major?" />
+            android:text="What's your major cuteness?"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <EditText
             android:id="@+id/editTextMajor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp" />
 
         <!-- Minor -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is your minor? (if applicable)" />
+            android:text="What's your minor (if any):"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <EditText
             android:id="@+id/editTextMinor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp" />
 
         <!-- Hometown -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is your hometown?" />
+            android:text="Where's your hometown?"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <EditText
             android:id="@+id/editTextHometown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp" />
 
         <!-- Interest -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What are your interests?" />
+            android:text="What are your interests?"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <EditText
             android:id="@+id/editTextInterest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp" />
 
         <!-- Siblings -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Do you have siblings?" />
+            android:text="Do you have siblings?"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <EditText
             android:id="@+id/editTextSiblings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number" />
+            android:inputType="number"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp" />
 
         <!-- Favorite Color -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is your favorite color?" />
+            android:text="What's your favorite color?"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <EditText
             android:id="@+id/editTextFavoriteColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp" />
 
         <!-- Favorite TV Show/Movie -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is your favorite TV show or movie?" />
+            android:text="What's your favorite TV show or movie?"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <EditText
             android:id="@+id/editTextFavoriteShow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp" />
 
         <!-- Favorite Weather -->
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What is your favorite weather?" />
+            android:text="What's your favorite weather?"
+            android:textStyle="bold"
+            android:textColor="#FF80AB" />
         <EditText
             android:id="@+id/editTextFavoriteWeather"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:background="#FFF0F4"
+            android:padding="10dp"
+            android:textColor="#880E4F"
+            android:textColorHint="#B0003A"
+            android:layout_marginBottom="16dp" />
 
         <!-- Sign Up Button -->
         <Button
             android:id="@+id/buttonSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up" />
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="#FF80AB"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
 
     </LinearLayout>
 </ScrollView>
