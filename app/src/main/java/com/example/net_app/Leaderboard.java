@@ -22,7 +22,7 @@ public class Leaderboard extends AppCompatActivity {
         public String getName() {
             return name;
         }
-
+//
         public int getScore() {
             return score;
         }
