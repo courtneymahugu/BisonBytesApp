@@ -1,19 +1,20 @@
 package com.example.net_app;
 
-import android.os.Bundle;
-import android.text.TextUtils;
+//import android.os.Bundle;
+//import android.text.TextUtils;
+//
+//import androidx.annotation.NonNull;
+//import androidx.appcompat.app.AppCompatActivity;
+//
+//import com.google.firebase.database.DatabaseError;
+//import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.FirebaseDatabase;
+//import com.google.firebase.database.ValueEventListener;
+//import com.google.zxing.Result;
+//
+//import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.google.zxing.Result;
-
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
-
+/*
 public class ScanQrActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
     private ZXingScannerView scannerView;
     private DatabaseReference databaseReference;
@@ -67,4 +68,6 @@ public class ScanQrActivity extends AppCompatActivity implements ZXingScannerVie
 
         scannerView.resumeCameraPreview(this);
     }
+
 }
+ */
